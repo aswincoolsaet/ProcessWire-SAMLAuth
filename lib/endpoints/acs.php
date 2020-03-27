@@ -4,7 +4,7 @@
  *  SP Assertion Consumer Service Endpoint
  */
 
-session_start();
+if(!isset($_SESSION))  {   session_start();  } 
 
 require_once dirname(dirname(__FILE__)).'/_toolkit_loader.php';
 
